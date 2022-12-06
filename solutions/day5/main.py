@@ -48,8 +48,6 @@ def process_stacks(stacks, moves, do_move):
     for move in moves:
         do_move(stacks, move)
 
-    print(stacks)
-
     return ''.join([stack[-1] for stack in stacks if len(stack) > 0])
 
 
